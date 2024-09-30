@@ -1,7 +1,7 @@
 package planthotel;
 
 public interface ICalculateLiquid {
-    public String typeOfLiquid();
-    public String amountOfLiquid();
+    String typeOfLiquid();
+    String amountOfLiquid();
 
 }

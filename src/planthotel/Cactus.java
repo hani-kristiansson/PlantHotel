@@ -15,6 +15,6 @@ public class Cactus extends Plants implements ICalculateLiquid {
 
     @Override
     public String amountOfLiquid() {
-        return "2cl";
+        return "2 cl";
     }
 }

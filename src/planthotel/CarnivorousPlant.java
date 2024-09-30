@@ -13,7 +13,7 @@ public class CarnivorousPlant extends Plants implements ICalculateLiquid {
 
     @Override
     public String amountOfLiquid() {
-        return Double.toString(0.1+(this.getHeight()*0.2)) + "liter";
+        return Double.toString(0.1+(this.getHeight()*0.2)) + " liter";
     }
 }
 

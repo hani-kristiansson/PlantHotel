@@ -14,7 +14,7 @@ public class PalmTree extends Plants implements ICalculateLiquid {
 
     @Override
     public String amountOfLiquid() {
-        return Double.toString(this.getHeight()*0.5) + "liter";
+        return Double.toString(this.getHeight()*0.5) + " liter";
     }
     }
 
