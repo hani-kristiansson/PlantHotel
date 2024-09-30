@@ -1,17 +1,14 @@
 package planthotel;
 
-public class Plants {
+public abstract class Plants {
 
+    //inkapsling
     private String name;
     private double height;
 
     public Plants(String name, double height) {
         this.name = name;
         this.height = height;
-    }
-
-    public Plants() {
-
     }
 
     public String getName() {

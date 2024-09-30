@@ -1,5 +1,6 @@
 package planthotel;
 
+// arv och interface
 public class CarnivorousPlant extends Plants implements ICalculateLiquid {
 
     public CarnivorousPlant(String name, double height) {

@@ -6,14 +6,14 @@ import java.util.List;
 
 public class Main {
 
-    // constructor
     public Main() {
+        // polymorfism
         Plants laura = new PalmTree("Laura", 5);
         Plants olof = new PalmTree("Olof", 1);
         Plants igge = new Cactus("Igge", 0.2);
         Plants meatloaf = new CarnivorousPlant("Meatloaf", 0.7);
 
-        // below list belongs/extends to class plants
+        // List med polymorfism. Att använda superklass som datatyp i lista för att spara data från subklasser
         List<Plants> plantsInTheHotel = new ArrayList<>();
         plantsInTheHotel.add(igge);
         plantsInTheHotel.add(meatloaf);
@@ -21,7 +21,8 @@ public class Main {
         plantsInTheHotel.add(laura);
 
         while (true) {
-            String message = JOptionPane.showInputDialog("Vilken växt ska få vätska? \n(skriv \"exit\" för att avsluta)");
+            String message = JOptionPane.showInputDialog
+                    ("Vilken växt ska få vätska? \n(skriv \"exit\" för att avsluta)");
 
             if (message == null || message.equalsIgnoreCase("exit")) {
                 JOptionPane.showMessageDialog(null, "Programmet avslutas. Ha en bra dag!");

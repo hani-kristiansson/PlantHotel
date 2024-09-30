@@ -1,5 +1,6 @@
 package planthotel;
 
+// arv och interface
 public class PalmTree extends Plants implements ICalculateLiquid {
 
 
