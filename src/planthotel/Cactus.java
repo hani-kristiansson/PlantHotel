@@ -7,6 +7,9 @@ public class Cactus extends Plants implements ICalculateLiquid {
         super(name, height);
     }
 
+    private static final String amountOfLiquidCactus = "2 cl";
+
+    // enums
     @Override
     public String typeOfLiquid() {
         return TypeOfLiquid.Mineralvatten.name();
@@ -14,6 +17,6 @@ public class Cactus extends Plants implements ICalculateLiquid {
 
     @Override
     public String amountOfLiquid() {
-        return "2 cl";
+        return amountOfLiquidCactus;
     }
 }

@@ -6,6 +6,11 @@ import java.util.List;
 
 public class Main {
 
+    private String firstMessage = "Vilken växt ska få vätska? \n(skriv \"exit\" för att avsluta)";
+    private String finishProgramMessage = "Programmet avslutas. Ha en bra dag!";
+    private String errorMessage = "Det finns ingen matchande växt med namnet \"%s\"";
+    private String exitProgram ="exit";
+
     public Main() {
         // polymorfism
         Plants laura = new PalmTree("Laura", 5);
@@ -22,10 +27,10 @@ public class Main {
 
         while (true) {
             String message = JOptionPane.showInputDialog
-                    ("Vilken växt ska få vätska? \n(skriv \"exit\" för att avsluta)");
+                    (firstMessage);
 
-            if (message == null || message.equalsIgnoreCase("exit")) {
-                JOptionPane.showMessageDialog(null, "Programmet avslutas. Ha en bra dag!");
+            if (message == null || message.equalsIgnoreCase(exitProgram)) {
+                JOptionPane.showMessageDialog(null, finishProgramMessage);
                 break;
             }
 
@@ -40,7 +45,7 @@ public class Main {
             }
             if (!plantFound) {
                 JOptionPane.showMessageDialog
-                        (null, "Det finns ingen matchande växt med namnet " + "'" + message + "'");
+                        (null, errorMessage.formatted(message));
             }
         }
     }

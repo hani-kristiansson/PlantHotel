@@ -7,6 +7,12 @@ public class CarnivorousPlant extends Plants implements ICalculateLiquid {
         super(name, height);
     }
 
+    private static final double baseLíquld = 0.1;
+    private static final double liquidPerMeter = 0.2;
+    private static final String unit = " liter";
+
+
+    // enums
     @Override
     public String typeOfLiquid() {
         return TypeOfLiquid.Proteindryck.name();
@@ -14,7 +20,7 @@ public class CarnivorousPlant extends Plants implements ICalculateLiquid {
 
     @Override
     public String amountOfLiquid() {
-        return Double.toString(0.1+(this.getHeight()*0.2)) + " liter";
+        return (baseLíquld+(this.getHeight()*liquidPerMeter) + unit);
     }
 }
 

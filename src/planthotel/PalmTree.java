@@ -8,6 +8,10 @@ public class PalmTree extends Plants implements ICalculateLiquid {
         super(name, height);
     }
 
+    private static final double liquidPerMeter = 0.5;
+    private static final String unit = " liter";
+
+    // enums
     @Override
     public String typeOfLiquid() {
         return TypeOfLiquid.Kranvatten.name();
@@ -15,7 +19,7 @@ public class PalmTree extends Plants implements ICalculateLiquid {
 
     @Override
     public String amountOfLiquid() {
-        return Double.toString(this.getHeight()*0.5) + " liter";
+        return (this.getHeight() * liquidPerMeter) + unit;
     }
-    }
+}
 
