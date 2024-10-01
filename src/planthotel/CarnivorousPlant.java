@@ -1,17 +1,17 @@
 package planthotel;
 
-// arv och interface
+// arv
 public class CarnivorousPlant extends Plants {
 
     public CarnivorousPlant(String name, double height) {
         super(name, height);
     }
 
-    private static final double baseLíquld = 0.1;
+    private static final double baseLiquid = 0.1;
     private static final double liquidPerMeter = 0.2;
     private static final String unit = " liter";
 
-
+    // interface method : typeOfLiquid() and amountOfLiquid ()
     // enums
     @Override
     public String typeOfLiquid() {
@@ -20,7 +20,7 @@ public class CarnivorousPlant extends Plants {
 
     @Override
     public String amountOfLiquid() {
-        return (baseLíquld+(this.getHeight()*liquidPerMeter) + unit);
+        return (baseLiquid+(this.getHeight()*liquidPerMeter) + unit);
     }
 }
 

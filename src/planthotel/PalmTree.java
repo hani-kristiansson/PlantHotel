@@ -1,6 +1,6 @@
 package planthotel;
 
-// arv och interface
+// arv
 public class PalmTree extends Plants {
 
 
@@ -11,6 +11,7 @@ public class PalmTree extends Plants {
     private static final double liquidPerMeter = 0.5;
     private static final String unit = " liter";
 
+    // interface method : typeOfLiquid() and amountOfLiquid ()
     // enums
     @Override
     public String typeOfLiquid() {
