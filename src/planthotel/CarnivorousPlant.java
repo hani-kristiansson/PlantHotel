@@ -1,7 +1,7 @@
 package planthotel;
 
 // arv och interface
-public class CarnivorousPlant extends Plants implements ICalculateLiquid {
+public class CarnivorousPlant extends Plants {
 
     public CarnivorousPlant(String name, double height) {
         super(name, height);
@@ -15,7 +15,7 @@ public class CarnivorousPlant extends Plants implements ICalculateLiquid {
     // enums
     @Override
     public String typeOfLiquid() {
-        return TypeOfLiquid.Proteindryck.name();
+        return TypeOfLiquid.PROTEINDRINK.getTypeOfLiquidString();
     }
 
     @Override

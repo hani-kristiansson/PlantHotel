@@ -1,6 +1,6 @@
 package planthotel;
 
-public abstract class Plants {
+public abstract class Plants implements ICalculateLiquid {
 
     //inkapsling
     private String name;

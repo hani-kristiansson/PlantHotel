@@ -1,7 +1,7 @@
 package planthotel;
 
 // arv och interface
-public class PalmTree extends Plants implements ICalculateLiquid {
+public class PalmTree extends Plants {
 
 
     public PalmTree(String name, double height) {
@@ -14,7 +14,7 @@ public class PalmTree extends Plants implements ICalculateLiquid {
     // enums
     @Override
     public String typeOfLiquid() {
-        return TypeOfLiquid.Kranvatten.name();
+        return TypeOfLiquid.TAPWATER.getTypeOfLiquidString();
     }
 
     @Override

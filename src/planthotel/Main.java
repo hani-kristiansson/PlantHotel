@@ -6,10 +6,15 @@ import java.util.List;
 
 public class Main {
 
-    private String firstMessage = "Vilken växt ska få vätska? \n(skriv \"exit\" för att avsluta)";
-    private String finishProgramMessage = "Programmet avslutas. Ha en bra dag!";
-    private String errorMessage = "Det finns ingen matchande växt med namnet \"%s\"";
-    private String exitProgram ="exit";
+    private String firstMessage = "Which plant should get liquid? \n(write \"exit\" to finish program)";
+    private String finishProgramMessage = "Program ends. Have a good day!";
+    private String errorMessage = "There is no matching plant with name \"%s\"";
+    private String exitProgramMessage ="exit";
+    //private String infoPrintOutMessage = plant.typeOfLiquid() + " " + plant.amountOfLiquid();
+
+    /*
+   cactus xx needs this type of water and this amount of liquid per day
+     */
 
     public Main() {
         // polymorfism
@@ -29,7 +34,7 @@ public class Main {
             String message = JOptionPane.showInputDialog
                     (firstMessage);
 
-            if (message == null || message.equalsIgnoreCase(exitProgram)) {
+            if (message == null || message.equalsIgnoreCase(exitProgramMessage)) {
                 JOptionPane.showMessageDialog(null, finishProgramMessage);
                 break;
             }
@@ -52,6 +57,8 @@ public class Main {
 
     private static String getLiquidInfo(ICalculateLiquid plant) {
         return plant.typeOfLiquid() + " " + plant.amountOfLiquid();
+
+        // plant xx needs this type of water and this amount of liquid per day
     }
 
     public static void main(String[] args) {
