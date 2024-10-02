@@ -60,6 +60,7 @@ public class Main {
         return printOutAmountAndTypeOfLiquid.formatted(plant.getName(), plant.amountOfLiquid(), plant.typeOfLiquid());
     }
 
+    //statiska main method att anropa huvudkonstrutor och köra programmet i en icke statisk kontext
     public static void main(String[] args) {
 
         Main main = new Main();
