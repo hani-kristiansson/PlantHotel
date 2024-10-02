@@ -55,6 +55,7 @@ public class Main {
         }
     }
     //method att skapa mängd av vätska. om det finns matchande method i subklass först, sen kollar superklassen
+    //polymorfism
     private String getLiquidInfo(Plants plant) {
         return printOutAmountAndTypeOfLiquid.formatted(plant.getName(), plant.amountOfLiquid(), plant.typeOfLiquid());
     }
